@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48A4D6F12B6A8A1C00F5C9FC /* zpoetryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A4D6F02B6A8A1C00F5C9FC /* zpoetryApp.swift */; };
+		48A4D6F32B6A8A1C00F5C9FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A4D6F22B6A8A1C00F5C9FC /* ContentView.swift */; };
+		48A4D6F52B6A8A2000F5C9FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A4D6F42B6A8A2000F5C9FC /* Assets.xcassets */; };
+		48A4D6F82B6A8A2000F5C9FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A4D6F72B6A8A2000F5C9FC /* Preview Assets.xcassets */; };
+		48A4D7022B6A8A2000F5C9FC /* zpoetryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A4D7012B6A8A2000F5C9FC /* zpoetryTests.swift */; };
+		48A4D70C2B6A8A2000F5C9FC /* zpoetryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A4D70B2B6A8A2000F5C9FC /* zpoetryUITests.swift */; };
+		48A4D70E2B6A8A2000F5C9FC /* zpoetryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A4D70D2B6A8A2000F5C9FC /* zpoetryUITestsLaunchTests.swift */; };
+		48A4D71C2B6A8B9600F5C9FC /* AuthorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A4D71B2B6A8B9600F5C9FC /* AuthorResponse.swift */; };
+		48A4D71E2B6A9A1500F5C9FC /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A4D71D2B6A9A1500F5C9FC /* Api.swift */; };
+		48A4D7212B6F94A200F5C9FC /* PoetryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A4D7202B6F94A200F5C9FC /* PoetryResponse.swift */; };
+		48A4D7232B6FA4B400F5C9FC /* PoetryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A4D7222B6FA4B400F5C9FC /* PoetryDetailView.swift */; };
+		48A4D7252B6FA81800F5C9FC /* PoetryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A4D7242B6FA81800F5C9FC /* PoetryListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48A4D6FE2B6A8A2000F5C9FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48A4D6E52B6A8A1C00F5C9FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48A4D6EC2B6A8A1C00F5C9FC;
+			remoteInfo = zpoetry;
+		};
+		48A4D7082B6A8A2000F5C9FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48A4D6E52B6A8A1C00F5C9FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48A4D6EC2B6A8A1C00F5C9FC;
+			remoteInfo = zpoetry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		48A4D6ED2B6A8A1C00F5C9FC /* zpoetry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zpoetry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48A4D6F02B6A8A1C00F5C9FC /* zpoetryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zpoetryApp.swift; sourceTree = "<group>"; };
+		48A4D6F22B6A8A1C00F5C9FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		48A4D6F42B6A8A2000F5C9FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48A4D6F72B6A8A2000F5C9FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		48A4D6FD2B6A8A2000F5C9FC /* zpoetryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zpoetryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48A4D7012B6A8A2000F5C9FC /* zpoetryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zpoetryTests.swift; sourceTree = "<group>"; };
+		48A4D7072B6A8A2000F5C9FC /* zpoetryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zpoetryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48A4D70B2B6A8A2000F5C9FC /* zpoetryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zpoetryUITests.swift; sourceTree = "<group>"; };
+		48A4D70D2B6A8A2000F5C9FC /* zpoetryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zpoetryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		48A4D71B2B6A8B9600F5C9FC /* AuthorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorResponse.swift; sourceTree = "<group>"; };
+		48A4D71D2B6A9A1500F5C9FC /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		48A4D7202B6F94A200F5C9FC /* PoetryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoetryResponse.swift; sourceTree = "<group>"; };
+		48A4D7222B6FA4B400F5C9FC /* PoetryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoetryDetailView.swift; sourceTree = "<group>"; };
+		48A4D7242B6FA81800F5C9FC /* PoetryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoetryListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48A4D6EA2B6A8A1C00F5C9FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A4D6FA2B6A8A2000F5C9FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A4D7042B6A8A2000F5C9FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48A4D6E42B6A8A1C00F5C9FC = {
+			isa = PBXGroup;
+			children = (
+				48A4D6EF2B6A8A1C00F5C9FC /* zpoetry */,
+				48A4D7002B6A8A2000F5C9FC /* zpoetryTests */,
+				48A4D70A2B6A8A2000F5C9FC /* zpoetryUITests */,
+				48A4D6EE2B6A8A1C00F5C9FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		48A4D6EE2B6A8A1C00F5C9FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48A4D6ED2B6A8A1C00F5C9FC /* zpoetry.app */,
+				48A4D6FD2B6A8A2000F5C9FC /* zpoetryTests.xctest */,
+				48A4D7072B6A8A2000F5C9FC /* zpoetryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48A4D6EF2B6A8A1C00F5C9FC /* zpoetry */ = {
+			isa = PBXGroup;
+			children = (
+				48A4D71F2B6A9AD100F5C9FC /* Views */,
+				48A4D71A2B6A8B5700F5C9FC /* Models */,
+				48A4D6F02B6A8A1C00F5C9FC /* zpoetryApp.swift */,
+				48A4D6F42B6A8A2000F5C9FC /* Assets.xcassets */,
+				48A4D6F62B6A8A2000F5C9FC /* Preview Content */,
+			);
+			path = zpoetry;
+			sourceTree = "<group>";
+		};
+		48A4D6F62B6A8A2000F5C9FC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				48A4D6F72B6A8A2000F5C9FC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		48A4D7002B6A8A2000F5C9FC /* zpoetryTests */ = {
+			isa = PBXGroup;
+			children = (
+				48A4D7012B6A8A2000F5C9FC /* zpoetryTests.swift */,
+			);
+			path = zpoetryTests;
+			sourceTree = "<group>";
+		};
+		48A4D70A2B6A8A2000F5C9FC /* zpoetryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				48A4D70B2B6A8A2000F5C9FC /* zpoetryUITests.swift */,
+				48A4D70D2B6A8A2000F5C9FC /* zpoetryUITestsLaunchTests.swift */,
+			);
+			path = zpoetryUITests;
+			sourceTree = "<group>";
+		};
+		48A4D71A2B6A8B5700F5C9FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				48A4D71B2B6A8B9600F5C9FC /* AuthorResponse.swift */,
+				48A4D71D2B6A9A1500F5C9FC /* Api.swift */,
+				48A4D7202B6F94A200F5C9FC /* PoetryResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		48A4D71F2B6A9AD100F5C9FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				48A4D6F22B6A8A1C00F5C9FC /* ContentView.swift */,
+				48A4D7222B6FA4B400F5C9FC /* PoetryDetailView.swift */,
+				48A4D7242B6FA81800F5C9FC /* PoetryListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48A4D6EC2B6A8A1C00F5C9FC /* zpoetry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48A4D7112B6A8A2000F5C9FC /* Build configuration list for PBXNativeTarget "zpoetry" */;
+			buildPhases = (
+				48A4D6E92B6A8A1C00F5C9FC /* Sources */,
+				48A4D6EA2B6A8A1C00F5C9FC /* Frameworks */,
+				48A4D6EB2B6A8A1C00F5C9FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zpoetry;
+			productName = zpoetry;
+			productReference = 48A4D6ED2B6A8A1C00F5C9FC /* zpoetry.app */;
+			productType = "com.apple.product-type.application";
+		};
+		48A4D6FC2B6A8A2000F5C9FC /* zpoetryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48A4D7142B6A8A2000F5C9FC /* Build configuration list for PBXNativeTarget "zpoetryTests" */;
+			buildPhases = (
+				48A4D6F92B6A8A2000F5C9FC /* Sources */,
+				48A4D6FA2B6A8A2000F5C9FC /* Frameworks */,
+				48A4D6FB2B6A8A2000F5C9FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48A4D6FF2B6A8A2000F5C9FC /* PBXTargetDependency */,
+			);
+			name = zpoetryTests;
+			productName = zpoetryTests;
+			productReference = 48A4D6FD2B6A8A2000F5C9FC /* zpoetryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		48A4D7062B6A8A2000F5C9FC /* zpoetryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48A4D7172B6A8A2000F5C9FC /* Build configuration list for PBXNativeTarget "zpoetryUITests" */;
+			buildPhases = (
+				48A4D7032B6A8A2000F5C9FC /* Sources */,
+				48A4D7042B6A8A2000F5C9FC /* Frameworks */,
+				48A4D7052B6A8A2000F5C9FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48A4D7092B6A8A2000F5C9FC /* PBXTargetDependency */,
+			);
+			name = zpoetryUITests;
+			productName = zpoetryUITests;
+			productReference = 48A4D7072B6A8A2000F5C9FC /* zpoetryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48A4D6E52B6A8A1C00F5C9FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					48A4D6EC2B6A8A1C00F5C9FC = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					48A4D6FC2B6A8A2000F5C9FC = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 48A4D6EC2B6A8A1C00F5C9FC;
+					};
+					48A4D7062B6A8A2000F5C9FC = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 48A4D6EC2B6A8A1C00F5C9FC;
+					};
+				};
+			};
+			buildConfigurationList = 48A4D6E82B6A8A1C00F5C9FC /* Build configuration list for PBXProject "zpoetry" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48A4D6E42B6A8A1C00F5C9FC;
+			productRefGroup = 48A4D6EE2B6A8A1C00F5C9FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48A4D6EC2B6A8A1C00F5C9FC /* zpoetry */,
+				48A4D6FC2B6A8A2000F5C9FC /* zpoetryTests */,
+				48A4D7062B6A8A2000F5C9FC /* zpoetryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48A4D6EB2B6A8A1C00F5C9FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A4D6F82B6A8A2000F5C9FC /* Preview Assets.xcassets in Resources */,
+				48A4D6F52B6A8A2000F5C9FC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A4D6FB2B6A8A2000F5C9FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A4D7052B6A8A2000F5C9FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48A4D6E92B6A8A1C00F5C9FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A4D6F32B6A8A1C00F5C9FC /* ContentView.swift in Sources */,
+				48A4D71C2B6A8B9600F5C9FC /* AuthorResponse.swift in Sources */,
+				48A4D7212B6F94A200F5C9FC /* PoetryResponse.swift in Sources */,
+				48A4D71E2B6A9A1500F5C9FC /* Api.swift in Sources */,
+				48A4D7252B6FA81800F5C9FC /* PoetryListView.swift in Sources */,
+				48A4D7232B6FA4B400F5C9FC /* PoetryDetailView.swift in Sources */,
+				48A4D6F12B6A8A1C00F5C9FC /* zpoetryApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A4D6F92B6A8A2000F5C9FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A4D7022B6A8A2000F5C9FC /* zpoetryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A4D7032B6A8A2000F5C9FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A4D70E2B6A8A2000F5C9FC /* zpoetryUITestsLaunchTests.swift in Sources */,
+				48A4D70C2B6A8A2000F5C9FC /* zpoetryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48A4D6FF2B6A8A2000F5C9FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48A4D6EC2B6A8A1C00F5C9FC /* zpoetry */;
+			targetProxy = 48A4D6FE2B6A8A2000F5C9FC /* PBXContainerItemProxy */;
+		};
+		48A4D7092B6A8A2000F5C9FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48A4D6EC2B6A8A1C00F5C9FC /* zpoetry */;
+			targetProxy = 48A4D7082B6A8A2000F5C9FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		48A4D70F2B6A8A2000F5C9FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		48A4D7102B6A8A2000F5C9FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48A4D7122B6A8A2000F5C9FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"zpoetry/Preview Content\"";
+				DEVELOPMENT_TEAM = 9SPDLRN3UH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = zpoetry;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mziyadam.zpoetry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48A4D7132B6A8A2000F5C9FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"zpoetry/Preview Content\"";
+				DEVELOPMENT_TEAM = 9SPDLRN3UH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = zpoetry;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mziyadam.zpoetry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		48A4D7152B6A8A2000F5C9FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9SPDLRN3UH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mziyadam.zpoetryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zpoetry.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/zpoetry";
+			};
+			name = Debug;
+		};
+		48A4D7162B6A8A2000F5C9FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9SPDLRN3UH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mziyadam.zpoetryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zpoetry.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/zpoetry";
+			};
+			name = Release;
+		};
+		48A4D7182B6A8A2000F5C9FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9SPDLRN3UH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mziyadam.zpoetryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = zpoetry;
+			};
+			name = Debug;
+		};
+		48A4D7192B6A8A2000F5C9FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9SPDLRN3UH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mziyadam.zpoetryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = zpoetry;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48A4D6E82B6A8A1C00F5C9FC /* Build configuration list for PBXProject "zpoetry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48A4D70F2B6A8A2000F5C9FC /* Debug */,
+				48A4D7102B6A8A2000F5C9FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48A4D7112B6A8A2000F5C9FC /* Build configuration list for PBXNativeTarget "zpoetry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48A4D7122B6A8A2000F5C9FC /* Debug */,
+				48A4D7132B6A8A2000F5C9FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48A4D7142B6A8A2000F5C9FC /* Build configuration list for PBXNativeTarget "zpoetryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48A4D7152B6A8A2000F5C9FC /* Debug */,
+				48A4D7162B6A8A2000F5C9FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48A4D7172B6A8A2000F5C9FC /* Build configuration list for PBXNativeTarget "zpoetryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48A4D7182B6A8A2000F5C9FC /* Debug */,
+				48A4D7192B6A8A2000F5C9FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48A4D6E52B6A8A1C00F5C9FC /* Project object */;
+}

@@ -1,0 +1,103 @@
+//
+//  ThirdView.swift
+//  zpoetry
+//
+//  Created by ziyad on 04/02/24.
+//
+
+import SwiftUI
+
+
+struct PoetryDetailView: View {
+    let data: PoetryResponse
+    
+    var body: some View {
+        NavigationStack{
+            ScrollView{
+                VStack(alignment: .leading){
+                    ForEach(data.lines,id:\.self) { line in
+                        Text(line)
+                            .frame(maxWidth: .infinity, alignment:.leading)
+                            .multilineTextAlignment(.leading)
+                    }
+                }
+                .padding()
+                .frame(maxWidth: .infinity)
+                .navigationBarTitle(data.title)
+            }
+        }
+    }
+}
+
+#Preview {
+    PoetryDetailView(data:mPoetry)
+}
+
+let mPoetry=PoetryResponse(
+    title: "An Exile's Farewell",
+    author: "Adam Lindsay Gordon",lines: [
+        "The ocean heaves around us still",
+        "With long and measured swell,",
+        "The autumn gales our canvas fill,",
+        "Our ship rides smooth and well.",
+        "The broad Atlantic's bed of foam",
+        "Still breaks against our prow;",
+        "I shed no tears at quitting home,",
+        "Nor will I shed them now!",
+        "",
+        "Against the bulwarks on the poop",
+        "I lean, and watch the sun",
+        "Behind the red horizon stoop â€”",
+        "His race is nearly run.",
+        "Those waves will never quench his light,",
+        "O'er which they seem to close,",
+        "To-morrow he will rise as bright",
+        "As he this morning rose.",
+        "",
+        "How brightly gleams the orb of day",
+        "Across the trackless sea!",
+        "How lightly dance the waves that play",
+        "Like dolphins in our lee!",
+        "The restless waters seem to say,",
+        "In smothered tones to me,",
+        "How many thousand miles away",
+        "My native land must be!",
+        "",
+        "Speak, Ocean! is my Home the same",
+        "Now all is new to me? â€”",
+        "The tropic sky's resplendent flame,",
+        "The vast expanse of sea?",
+        "Does all around her, yet unchanged,",
+        "The well-known aspect wear?",
+        "Oh! can the leagues that I have ranged",
+        "Have made no difference there?",
+        "",
+        "How vivid Recollection's hand",
+        "Recalls the scene once more!",
+        "I see the same tall poplars stand",
+        "Beside the garden door;",
+        "I see the bird-cage hanging still;",
+        "And where my sister set",
+        "The flowers in the window-sill â€”",
+        "Can they be living yet?",
+        "",
+        "Let woman's nature cherish grief,",
+        "I rarely heave a sigh",
+        "Before emotion takes relief",
+        "In listless apathy;",
+        "While from my pipe the vapours curl",
+        "Towards the evening sky,",
+        "And 'neath my feet the billows whirl",
+        "In dull monotony!",
+        "",
+        "The sky still wears the crimson streak",
+        "Of Sol's departing ray,",
+        "Some briny drops are on my cheek,",
+        "'Tis but the salt sea spray!",
+        "Then let our barque the ocean roam,",
+        "Our keel the billows plough;",
+        "I shed no tears at quitting home,",
+        "Nor will I shed them now!"
+    ],
+    linecount: "56"
+)
